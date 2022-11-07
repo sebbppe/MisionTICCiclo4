@@ -6,7 +6,7 @@ const Header = () => {
       <nav className="navbar row">
         <div className="col-12 col-md-3">
           <div className="navbar-brand">
-            <img src="./images/logo192.png" alt="Tienda"></img>
+            <img src="./images/logo192.png" alt="Tienda" width="40px" height="40px"></img>
           </div>
         </div>
         <div className="col-12 col-md-6 mt-2 mt-md-0">
@@ -19,20 +19,22 @@ const Header = () => {
             ></input>
             <div class="input-group-append">
               <button id="search-btn" class="btn">
-                <i class="fa fa fa" aria-hidden="true"></i>
+                <i class="fa fa-search-plus fa-2x text-white" aria-hidden="true"></i>
               </button>
             </div>
           </div>
         </div>
         <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
-          <button className="btn" id="login-btn">
-            Inicie sesión
-          </button>
-          <span id="cart" className="ml-3">
-            Carrito
-          </span>
+          
+          <i class="fa fa-shopping-cart fa-2x text-white" aria-hidden="true"></i>
           <span id="cart_count" className="ml-1">
             2
+          </span>
+
+          <span>
+            <button className="btn btn-info mx-4" id="login-btn">
+              Inicie sesión
+            </button>
           </span>
         </div>
       </nav>

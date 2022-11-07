@@ -4,7 +4,6 @@ const connectDatabase=require("./config/database");
 const dotenv=require("dotenv");
 
 dotenv.config({path: 'back/config/config.env'});
-
 connectDatabase();
 
 //cambiando algo

@@ -83,4 +83,4 @@ function verProductos(){
     .then(res=>console.log(res))
     .then(err=>console.error(err))
 }
-verProductos();
+//verProductos();
