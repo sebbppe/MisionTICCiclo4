@@ -1,0 +1,4 @@
+primero se deben crear las constantes,
+luego los reducer,
+después de ello se deben declarar los reduces en store.js
+para después crear las acciones

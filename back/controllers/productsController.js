@@ -4,6 +4,12 @@ const fetch =(url)=>import('node-fetch').then(({default:fetch})=>fetch(url));//i
 //Require, response, next
 exports.getProducts = async (req, res, next) => {
   const product = await producto.find();
+  if (!product){
+    return res.status(404).json({
+      sucess: false,
+      error: true
+    })
+  }
   res.status(201).json({
     sucess: true,
     count: product.length,
@@ -15,7 +21,8 @@ exports.getProductByID = async (req, res, next) => {
   if (!product) {
     return res.status(404).json({
       sucess: false,
-      message:"No encontramos ese producto"
+      message:"No encontramos ese producto", 
+      error:true
     });
   }
   else{
